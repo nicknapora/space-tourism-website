@@ -1,7 +1,12 @@
 /* TODO 2022.05.26:
    ~~consolidate files into one for each category~~
    ~~fix heading tags in HTML on each page~~ (mostly)
-   setup basic navbar functionality
+   set up grids and their individual CSS files for
+   - index
+   - destination
+   - crew
+   - technology
+   set up basic navbar functionality
    use JavaScript to navigate and animate within categories
    set up media queries
    maybe use JavaScript for mobile pop-out menu
@@ -15,6 +20,11 @@
 @font-face {
     font-family: "Barlow Regular";
     src: url(fonts/Barlow-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Barlow Condensed Bold";
+    src: url(fonts/BarlowCondensed-Bold.ttf)
 }
 
 @font-face {
@@ -35,6 +45,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
  
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+  
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+  
+a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 p {
@@ -95,10 +125,30 @@ h5 {
     text-transform: uppercase;
 }
 
-.navstyle {
+.navbar {
     font-family: "Barlow Condensed Regular", sans-serif;
     font-size: 16px;
     letter-spacing: 2.7px;
     color: var(--main-color);
     text-transform: uppercase;
+
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
+.tabs {
+    font-family: "Barlow Condensed Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
 }
