@@ -1,0 +1,104 @@
+/* TODO 2022.05.26:
+   ~~consolidate files into one for each category~~
+   ~~fix heading tags in HTML on each page~~ (mostly)
+   setup basic navbar functionality
+   use JavaScript to navigate and animate within categories
+   set up media queries
+   maybe use JavaScript for mobile pop-out menu
+*/
+
+@font-face {
+    font-family: "Bellefair Regular";
+    src: url(fonts/Bellefair-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Barlow Regular";
+    src: url(fonts/Barlow-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Barlow Condensed Regular";
+    src: url(fonts/BarlowCondensed-Regular.ttf)
+}
+
+:root {
+    --background-color: #0B0D17;
+    --sub-color: #D0D6F9;
+    --main-color: #FFFFFF;
+}
+
+body {
+    
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+p {
+    font-family: "Barlow Regular", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--sub-color);
+}
+
+h1 {
+    font-family: "Bellefair Regular", serif;
+    font-size: 150px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Bellefair Regular", serif;
+    font-size: 100px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Bellefair Regular", serif;
+    font-size: 56px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Bellefair Regular", serif;
+    font-size: 320px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: "Barlow Condensed Regular", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    color: var(--sub-color);
+    text-transform: uppercase;
+}
+
+.subheading1 {
+    font-family: "Bellefair Regular", serif;
+    font-size: 2px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.subheading2 {
+    font-family: "Barlow Condensed Regular", sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.navstyle {
+    font-family: "Barlow Condensed Regular", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
