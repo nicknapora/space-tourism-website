@@ -5,7 +5,7 @@ body {
     background-color: var(--background-color);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: center
+    background-position-x: center;
 }
 
 .nav-destination {
@@ -15,8 +15,7 @@ body {
 .container {
    /* combine 4.03fr and 6.88fr? */
     grid-template-columns: 3.82fr 48px 4.44fr 63px 380px 30px 35px 4.03fr 6.88fr 143px 79px 122px 100px 11.39fr;
-    grid-template-rows: 4.44fr 48px 48px 8.44fr 34px 7.11fr 1px 444px 37px 115px 14px 128px 55px 28px 61px 6px 12.44fr;
-    
+    grid-template-rows: 4.44fr 48px 48px 8.44fr 34px 7.11fr 1px 37px 115px 14px 128px 55px 28px 61px 6px 12.44fr;
 }
 
 .item-blur-box {
@@ -54,6 +53,12 @@ body {
     grid-column-end: 6;
     grid-row-start: 5;
     grid-row-end: 6;
+
+    font-family: "Barlow Condensed Regular";
+    font-size: 28px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    letter-spacing: 4.725px;
 }
 
 .item-image {
@@ -61,8 +66,6 @@ body {
     grid-column-end: 8;
     grid-row-start: 8;
     grid-row-end: 16;
-
-    background-color: crimson;
 }
 
 .item-sub-nav {

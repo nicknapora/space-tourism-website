@@ -13,7 +13,6 @@ body {
 }
 
 .container {
-   
     grid-template-columns: [left-margin] 3.82fr [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore] 450px [right-padding] 5.35fr;
     grid-template-rows: [top-margin] 4.44fr [navbar] 96px [top-padding] 27.89fr [subheading-1] 20px [subheading-2] 14px [inner-padding-1] 24px [heading] 172px [inner-padding-2] 24px [paragraph] 128px [explore-padding] 88px [bottom-margin] 4.78fr;
     
