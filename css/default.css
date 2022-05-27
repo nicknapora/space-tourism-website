@@ -1,15 +1,12 @@
-/* TODO 2022.05.26:
-   ~~consolidate files into one for each category~~
-   ~~fix heading tags in HTML on each page~~ (mostly)
-   set up grids and their individual CSS files for
-   - index
-   - destination
-   - crew
-   - technology
-   set up basic navbar functionality
-   use JavaScript to navigate and animate within categories
-   set up media queries
-   maybe use JavaScript for mobile pop-out menu
+/* TODO:
+   __ Implement desktop layout of Destination page
+   __ Create JavaScript to swap between contents on Destination
+   __ Implement desktop layout of Crew page
+   __ Add JavaScript to swap between contents on Crew
+   __ Implement desktop layout of Technology
+   __ Add JavaScript to swap between contents on Technology
+   __ Create responsive layout for Tablet sizes on each page
+   __ Create responsive layout for Mobile sizes on each page
 */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 

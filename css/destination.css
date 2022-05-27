@@ -13,8 +13,22 @@ body {
 }
 
 .container {
-   
-    grid-template-columns: [left-margin] 3.82fr [left-padding] 7.74fr [subheading-start] 63.5px [image] 445px [middle-padding] 10.90fr [main-1] 143px [main-2] 79px [main-3] 122px [main-4] 101px [right-padding] 11.32fr;
-    grid-template-rows: [top-margin] 4.44fr [navbar] 96px [top-padding] 5.23fr [subheading] 34px [inner-padding-1] 64px [sub-nav] 33px [inner-padding-2] 37px [paragraph] 128px [inner-padding-3] 55px [inner-padding-4] 28px [labels] 29px [info] 32px [bottom-margin] 13.11fr;
+   /* combine 4.03fr and 6.88fr? */
+    grid-template-columns: 3.82fr 48px 4.44fr 63px 410px 35px 4.03fr 6.88fr 143px 79px 122px 100px 11.39fr;
+    grid-template-rows: 4.44fr 48px 48px 5.28fr 34px 8.44fr 1px 444px 37px 115px 14px 128px 55px 28px 61px 6px 12.44fr;
     
+}
+
+.item-blur-box {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+
+    background-color: rgba(255, 255, 255, 0.02);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+    height: 96px;
+    width: 100%;
 }
