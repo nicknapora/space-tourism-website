@@ -8,6 +8,10 @@ body {
     background-position-x: center
 }
 
+.nav-index {
+    box-shadow: inset 0 -5px 0 #FFFFFF;
+}
+
 .container {
    
     grid-template-columns: [left-margin] 3.82fr [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore] 450px [right-padding] 5.35fr;
@@ -86,8 +90,4 @@ body {
 
  .button:hover {
     box-shadow: 0 0 0 88pt rgba(255, 255, 255, 0.1);
-}
-
-.nav-index {
-    box-shadow: inset 0 -5px 0 #FFFFFF;
 }

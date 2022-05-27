@@ -1,0 +1,13 @@
+/* This is the specialized CSS for the crew page.
+*/
+body {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center
+}
+
+.nav-crew {
+    box-shadow: inset 0 -5px 0 #FFFFFF;
+}

@@ -1,0 +1,13 @@
+/* This is the specialized CSS for the technology page.
+*/
+body {
+    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center
+}
+
+.nav-technology {
+    box-shadow: inset 0 -5px 0 #FFFFFF;
+}
