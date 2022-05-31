@@ -13,14 +13,14 @@ body {
 }
 
 .container {
-    grid-template-columns: [left-margin] 3.82fr [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore] 450px [right-padding] 5.35fr;
-    grid-template-rows: [top-margin] 4.44fr [navbar] 96px [top-padding] 27.89fr [subheading-1] 20px [subheading-2] 14px [inner-padding-1] 24px [heading] 172px [inner-padding-2] 24px [paragraph] 128px [explore-padding] 88px [bottom-margin] 4.78fr;
+    grid-template-columns: [left-margin] 3.82fr [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore-1] 362px [explore-2] 88px [right-padding] 5.35fr;
+    grid-template-rows: [top-margin] 40px [navbar] 96px [top-padding] 27.89fr [subheading-1] 20px [subheading-2] 14px [inner-padding-1] 24px [heading] 172px [inner-padding-2] 24px [paragraph] 128px [explore-padding] 88px [bottom-margin] 4.78fr;
     
 }
 
 .item-blur-box {
     grid-column-start: 4;
-    grid-column-end: 8;
+    grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: span 1;
 
@@ -64,7 +64,7 @@ body {
 
 .item-explore {
     grid-column-start: 6;
-    grid-column-end: span 1;
+    grid-column-end: span 2;
     grid-row-start: 5;
     grid-row-end: span 6;
 }

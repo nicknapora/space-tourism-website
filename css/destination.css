@@ -14,8 +14,8 @@ body {
 
 .container {
    /* combine 4.03fr and 6.88fr? */
-    grid-template-columns: 3.82fr 48px 4.44fr 63px 380px 30px 35px 4.03fr 6.88fr 143px 79px 122px 100px 11.39fr;
-    grid-template-rows: 4.44fr 48px 48px 8.44fr 34px 7.11fr 1px 37px 115px 14px 128px 55px 28px 61px 6px 12.44fr;
+    grid-template-columns: [left-margin] 3.82fr [logo] 48px [navbar-left-spacer] 4.44fr [navbar-1] 63px [image-1] 380px [navbar-3] 30px [image-rightmost] 35px [nav-select-spacer] 4.03fr [main-spacer] 6.88fr [distance-info] 143px [info-spacer] 79px [time-info-spacer] 122px [main-rightmost] 100px [right-margin] 11.39fr;
+    grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-spacer] 8.44fr [subheader] 34px [subnav-spacer] 4.44fr [subnav-1] 33px [subnav-2] 1px [header-spacer] 37px [header] 115px [paragraph-spacer] 14px [paragraph] 128px [info-spacer-1] 55px [info-spacer2] 28px [info] 61px [image-bottom] 6px [bottom-spacer] 12.44fr;
 }
 
 .item-blur-box {
@@ -48,6 +48,10 @@ body {
     grid-row-end: 11;
 }
 
+.item-header h1 {
+    font-size: 100px;
+}
+
 .item-sub {
     grid-column-start: 4;
     grid-column-end: 6;
@@ -72,14 +76,24 @@ body {
     grid-column-start: 10;
     grid-column-end: 14;
     grid-row-start: 7;
-    grid-row-end: 9;
+    grid-row-end: 8;
+
+    font-family: "Barlow Condensed Regular";
+    font-size: 16px;
+    color: var(--sub-color);
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+}
+
+.item-sub-nav li {
+    display: inline-block;
 }
 
 .item-paragraph {
     grid-column-start: 10;
     grid-column-end: 14;
-    grid-row-start: 12;
-    grid-row-end: 13;
+    grid-row-start: paragraph;
+    grid-row-end: info-spacer-1;
 }
 
 .item-distance-info {
