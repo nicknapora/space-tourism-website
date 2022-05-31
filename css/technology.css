@@ -11,3 +11,68 @@ body {
 .nav-technology {
     box-shadow: inset 0 -5px 0 #FFFFFF;
 }
+
+.container {
+    grid-template-columns: [left-margin] 55px [logo] 48px [navbar-spacer] 4.31fr [subnav-start] 2px [subheading-start] 78px [after-navbar-spacer] 5.56fr [content-start] 315px [blur-start] 31px [nav-spacer] 93px [nav-items-start] 62px [content-right-margin] 130px [image-start] 350px [right-margin] 165px;
+    grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-spacer] 8.44fr [subheader] 34px [middle-spacer] 2.89fr [image-upper] 111px [main-content] 303px [image-bottom] 113px [bottom-margin] 11.22fr;
+}
+
+.item-blur-box {
+    grid-column-start: 8;
+    grid-column-end: span 6;
+    grid-row-start: navbar-1;
+    grid-row-end: span 2;
+}
+
+.item-nav-line {
+    grid-column-start: 5;
+    grid-column-end: span 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.item-nav {
+    grid-column-start: 10;
+    grid-column-end: span 3;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+
+    z-index: 2;
+}
+
+.item-sub {
+    grid-column-start: 4;
+    grid-column-end: span 4;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+}
+
+.item-sub-nav {
+    grid-column-start: 4;
+    grid-column-end: span 2;
+    grid-row-start: 8;
+    grid-row-end: span 1;
+}
+
+.item-content {
+    grid-column-start: 7;
+    grid-column-end: span 4;
+    grid-row-start: 8;
+    grid-row-end: span 1;
+}
+
+.item-content h3 {
+    margin-top: 11px;
+}
+
+.item-content p {
+    margin-top: 17px;
+}
+
+.item-image {
+    grid-column-start: 12;
+    grid-column-end: span 2;
+    grid-row-start: 7;
+    grid-row-end: span 3;
+}
+

@@ -8,13 +8,13 @@ body {
     background-position-x: center
 }
 
+.nav-crew {
+    box-shadow: inset 0 -5px 0 #FFFFFF;
+}
+
 .container {
     grid-template-columns: [left-margin] 55px [logo] 48px [navbar-spacer] 4.31fr [paragraph-1] 2px [paragraph-2] 442px [blur-start] 31px [nav-spacer] 6.46fr [nav-items-start] 542px [nav-right-margin] 165px;
     grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-spacer] 8.44fr [subheader] 34px [middle-spacer] 17.11fr [item-heading] 37px [content-padding-1] 15px [header] 64px [content-padding-2] 27px [paragraph] 128px [content-padding-3] 13.33fr [selector] 15px [bottom-margin] 10.44fr;
-}
-
-.nav-crew {
-    box-shadow: inset 0 -5px 0 #FFFFFF;
 }
 
 .item-blur-box {

@@ -123,13 +123,11 @@ p {
     font-family: "Barlow Regular", sans-serif;
     font-size: 18px;
     font-weight: 400;
+    line-height: 32px;
     color: var(--sub-color);
 
     margin-top: 0;
     margin-bottom: 0;
-
-    line-height: 32px;
-    font-size: 18px;
 }
 
 h1 {
