@@ -57,19 +57,6 @@ body {
     grid-column-end: 6;
     grid-row-start: 5;
     grid-row-end: 6;
-
-    font-family: "Barlow Condensed Regular";
-    font-size: 28px;
-    color: var(--main-color);
-    text-transform: uppercase;
-    letter-spacing: 4.725px;
-}
-
-.item-image {
-    grid-column-start: 5;
-    grid-column-end: 8;
-    grid-row-start: 8;
-    grid-row-end: 16;
 }
 
 .item-sub-nav {
@@ -96,9 +83,6 @@ body {
     grid-column-end: 14;
     grid-row-start: paragraph;
     grid-row-end: info-spacer-1;
-
-    line-height: 32px;
-    font-size: 18px;
 }
 
 .subheading1 {
@@ -120,5 +104,12 @@ body {
     grid-column-start: 12;
     grid-column-end: 13;
     grid-row-start: 15;
+    grid-row-end: 16;
+}
+
+.item-image {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 8;
     grid-row-end: 16;
 }
