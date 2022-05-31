@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    grid-template-columns: [left-margin] 3.82fr [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore-1] 362px [explore-2] 88px [right-padding] 5.35fr;
+    grid-template-columns: [left-margin] 55px [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore-1] 362px [explore-2] 88px [right-padding] 5.35fr;
     grid-template-rows: [top-margin] 40px [navbar] 96px [top-padding] 27.89fr [subheading-1] 20px [subheading-2] 14px [inner-padding-1] 24px [heading] 172px [inner-padding-2] 24px [paragraph] 128px [explore-padding] 88px [bottom-margin] 4.78fr;
     
 }
@@ -38,7 +38,7 @@ body {
     grid-row-start: 2;
     grid-row-end: span 1;
 
-    z-index: 2;
+    z-index: 3;
 }
 
 .item-subheader {
@@ -60,6 +60,9 @@ body {
     grid-column-end: 5;
     grid-row-start: 9;
     grid-row-end: 10;
+
+    font-size: 18px;
+    line-height: 32px;
 }
 
 .item-explore {
