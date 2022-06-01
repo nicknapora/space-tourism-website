@@ -1,7 +1,8 @@
 /* This is the specialized CSS for the grid layout of the index page.
 */
+
 body {
-    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-image: url("../assets/home/background-home-mobile.jpg");
     background-color: var(--background-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,83 +14,162 @@ body {
 }
 
 .container {
-    grid-template-columns: [left-margin] 55px [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore-1] 362px [explore-2] 88px [right-padding] 5.35fr;
-    grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-padding] 27.89fr [subheading-1] 20px [subheading-2] 14px [inner-padding-1] 24px [heading] 172px [inner-padding-2] 24px [paragraph] 128px [explore-padding] 88px [bottom-margin] 4.78fr;
-    
+    grid-template-columns: [left-margin] 6.40fr [logo] 40px [spacer-left] 2.67fr [button] 246px [spacer-right] 4.27fr [menu-button] 24px [right-margin] 6.40fr;
+    grid-template-rows: [top-margin] 24px [logo-row] 40px [top-spacer] 48px [subheader] 19px [header-space] 16px [header] 100px [content-space] 16px [paragraph] 125px [button-space] 33px [button] 246px;
 }
 
 .item-blur-box {
-    grid-column-start: 4;
-    grid-column-end: 9;
-    grid-row-start: 2;
-    grid-row-end: span 2;
+    display: none;
 }
 
 .item-nav-line {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    display: none;
 }
 
 .item-nav {
-    grid-column-start: 2;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: span 2;
-
-    z-index: 3;
+    display: none;
 }
 
 .item-subheader {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 7;
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 4;
+    grid-row-end: span 1;
 }
 
 .item-header {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 8;
-    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 6;
+    grid-row-end: span 1;
 }
 
 .item-paragraph {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 10;
-    grid-row-end: 11;
+    grid-column-start: 2;
+    grid-column-end: span 5;
+    grid-row-start: 8;
+    grid-row-end: span 1;
 
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.item-logo {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.item-logo img {
+    height: 40px;
+    width: 40px;
 }
 
 .item-explore {
-    grid-column-start: 6;
-    grid-column-end: span 2;
-    grid-row-start: 6;
-    grid-row-end: span 6;
+    grid-column-start: 4;
+    grid-column-end: span 1;
+    grid-row-start: 10;
+    grid-row-end: span 1;
 }
 
 .button {
+    border-radius: 50%;
+    background-color: var(--main-color);
     text-align: center;
     color: var(--background-color);
     font-family: "Bellefair Regular", serif;
-    font-size: 32px;
-    line-height: 36.67px;
     text-transform: uppercase;
-    padding: 118.67px 0px;
 
-    margin: 88px;
-    height: auto;
-    width: auto;
-
-    border-radius: 50%;
-    background-color: var(--main-color);
-
+    font-size: 20px;
+    line-height: 23px;
+    padding: 68px 0px;
+    margin: 48px;
 }
 
- .button:hover {
-    box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1);
+.button:hover {
+    box-shadow: 0 0 0 48px rgba(255, 255, 255, 0.1);
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+    }
+    
+    .container {
+        grid-template-columns: [left-margin] 55px [left-padding] 7.64fr [main-1] 445px [main-2] 5px [middle-padding] 20.69fr [explore-1] 362px [explore-2] 88px [right-padding] 5.35fr;
+        grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-padding] 27.89fr [subheading-1] 20px [subheading-2] 14px [inner-padding-1] 24px [heading] 172px [inner-padding-2] 24px [paragraph] 128px [explore-padding] 88px [bottom-margin] 4.78fr;
+    }
+
+    .item-logo {
+        display: none;
+    }
+    
+    .item-blur-box {
+        display: block;
+        grid-column-start: 4;
+        grid-column-end: 9;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    }
+    
+    .item-nav-line {
+        display: block;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .item-nav {
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    
+        z-index: 3;
+    }
+    
+    .item-subheader {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+    
+    .item-header {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 8;
+        grid-row-end: 9;
+    }
+    
+    .item-paragraph {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 10;
+        grid-row-end: 11;
+    
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .item-explore {
+        grid-column-start: 6;
+        grid-column-end: span 2;
+        grid-row-start: 6;
+        grid-row-end: span 6;
+    }
+    
+    .button {
+        font-size: 32px;
+        line-height: 36.67px;
+        margin: 88px;
+        padding: 118.67px 0px;
+    }
+    
+    .button:hover {
+        box-shadow: 0 0 0 88px rgba(255, 255, 255, 0.1);
+    }
 }
