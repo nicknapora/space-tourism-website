@@ -58,6 +58,26 @@ table {
 	border-spacing: 0;
 }
 
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+  
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+  
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+  
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 @font-face {
     font-family: "Bellefair Regular";
     src: url(fonts/Bellefair-Regular.ttf);
@@ -97,26 +117,6 @@ table {
     --background-color: #0B0D17;
     --sub-color: #D0D6F9;
     --main-color: #FFFFFF;
-}
-
-a:link {
-    text-decoration: none;
-    color: inherit;
-}
-  
-a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-  
-a:hover {
-    text-decoration: none;
-    color: inherit;
-}
-  
-a:active {
-    text-decoration: none;
-    color: inherit;
 }
 
 p {
@@ -220,6 +220,10 @@ h5 {
 
 .navbar li:hover {
     box-shadow: inset 0 -5px 0 rgba(255, 255, 255, .5);
+}
+
+.navbar li a {
+    display: block;
 }
 
 .tabs {

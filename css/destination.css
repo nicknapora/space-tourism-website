@@ -14,7 +14,7 @@ body {
 
 .container {
    /* combine 4.03fr and 6.88fr? */
-    grid-template-columns: [left-margin] 55px [logo] 48px [navbar-left-spacer] 4.44fr [navbar-1] 63px [image-1] 380px [navbar-3] 30px [image-rightmost] 35px [nav-select-spacer] 4.03fr [main-spacer] 6.88fr [distance-info] 143px [info-spacer] 79px [time-info-spacer] 122px [main-rightmost] 100px [right-margin] 11.39fr;
+    grid-template-columns: [left-margin] 55px [logo] 48px [navbar-left-spacer] 4.44fr [navbar-1] 63px [image-1] 380px [navbar-3] 30px [image-rightmost] 35px [nav-select-spacer] 4.03fr [main-spacer] 6.88fr [distance-info] 143px [info-spacer] 79px [time-info-spacer] 122px [main-rightmost] 100px [right-margin] 11.46fr;
     grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-spacer] 8.44fr [subheader] 34px [subnav-spacer] 4.44fr [subnav-1] 33px [subnav-2] 1px [header-spacer] 37px [header] 115px [paragraph-spacer] 14px [paragraph] 128px [info-spacer-1] 55px [info-spacer2] 28px [info] 61px [image-bottom] 6px [bottom-spacer] 12.44fr;
 }
 
