@@ -208,6 +208,7 @@ h5 {
 
 .navbar li{
     display: inline-block;
+    height: 96px;
     margin-left: 48px;
     line-height: 96px;
     padding: 0;
