@@ -121,68 +121,75 @@ a:active {
 
 p {
     font-family: "Barlow Regular", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 32px;
     color: var(--sub-color);
-
     margin-top: 0;
     margin-bottom: 0;
+
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
 }
 
 h1 {
     font-family: "Bellefair Regular", serif;
-    font-size: 150px;
     color: var(--main-color);
     text-transform: uppercase;
 
     margin-top: 24px;
     margin-bottom: 24px;
+
+    font-size: 80px;
+    line-height: 100px;
 }
 
 h2 {
     font-family: "Bellefair Regular", serif;
-    font-size: 100px;
     color: var(--main-color);
     text-transform: uppercase;
+
+    font-size: 56px;
 }
 
 h3 {
     font-family: "Bellefair Regular", serif;
-    font-size: 56px;
     color: var(--main-color);
     text-transform: uppercase;
+
+    font-size: 28px;
 }
 
 h4 {
     font-family: "Bellefair Regular", serif;
-    font-size: 32px;
     color: var(--main-color);
     text-transform: uppercase;
+
+    font-size: 20px;
 }
 
 h5 {
     font-family: "Barlow Condensed Regular", sans-serif;
-    font-size: 28px;
-    letter-spacing: 4.75px;
     color: var(--sub-color);
     text-transform: uppercase;
 
+    font-size: 16px;
+    letter-spacing: 2.7px;
 }
 
 .subheading1 {
     font-family: "Bellefair Regular", serif;
-    font-size: 28px;
     color: var(--main-color);
     text-transform: uppercase;
+
+    font-size: 14px;
 }
 
 .subheading2 {
     font-family: "Barlow Condensed Regular", sans-serif;
-    font-size: 14px;
-    letter-spacing: 2.35px;
     color: var(--main-color);
     text-transform: uppercase;
+
+    font-size: 14px;
+    letter-spacing: 2.35px;
 }
 
 .logo {
@@ -191,7 +198,6 @@ h5 {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    
 }
 
 .navbar {
@@ -207,10 +213,7 @@ h5 {
 }
 
 .navbar li{
-    display: inline-block;
-    height: 96px;
-    margin-left: 48px;
-    line-height: 96px;
+    display: block;
     padding: 0;
 }
 
@@ -228,10 +231,11 @@ h5 {
 
 .tabs {
     font-family: "Barlow Condensed Regular", sans-serif;
-    font-size: 16px;
-    letter-spacing: 2.7px;
     color: var(--main-color);
     text-transform: uppercase;
+
+    font-size: 16px;
+    letter-spacing: 2.7px;
 }
 
 .container {
@@ -253,14 +257,70 @@ h5 {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 
-    height: 96px;
     width: 100%;
 }
 
 .item-sub {
     font-family: "Barlow Condensed Regular";
-    font-size: 28px;
     color: var(--main-color);
     text-transform: uppercase;
-    letter-spacing: 4.725px;
+}
+
+@media only screen and (min-width: 1200px)
+{
+    p {
+        font-family: "Barlow Regular", sans-serif;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 400;
+    }
+
+    h1 {
+        font-size: 150px;
+        
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 100px;
+    }
+
+    h3 {
+        font-size: 56px;
+    }
+
+    h4 {
+        font-size: 32px;
+    }
+
+    h5 {
+        font-size: 28px;
+        letter-spacing: 4.75px;
+    }
+
+    .subheading1 {
+        font-size: 28px;
+    }
+
+    .subheading2 {
+        font-size: 14px;
+        letter-spacing: 2.35px;
+    }
+
+    .navbar li{
+        display: inline-block;
+        height: 96px;
+        margin-left: 48px;
+        line-height: 96px;
+    }
+
+    .item-blur-box {
+        height: 96px;
+    }
+
+    .item-sub {
+        font-size: 28px;
+        letter-spacing: 4.725px;
+    }
 }
