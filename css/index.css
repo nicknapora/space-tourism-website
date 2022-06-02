@@ -27,7 +27,26 @@ body {
 }
 
 .item-nav {
-    display: none;
+    grid-column-start: 4;
+    grid-column-end: span 4;
+    grid-row-start: 1;
+    grid-row-end: span 11;
+
+    float: right;
+    width: 70vw;
+
+    z-index: 3;
+}
+
+.item-menu-button {
+    grid-column-start: menu-button;
+    grid-column-end: span 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+
+.item-menu-button img{
+    margin-top: 33px;
 }
 
 .item-subheader {
@@ -91,6 +110,15 @@ body {
     box-shadow: 0 0 0 48px rgba(255, 255, 255, 0.1);
 }
 
+@media only screen and (min-width: 768px) {
+
+    .container {
+        grid-template-columns: [left-margin] 5.08fr [logo] 48px ;
+        grid-template-rows: 96px 10.35fr 24px 24px 150px 24px 112px 8.11fr 322 8.11fr;
+    }
+
+}
+
 @media only screen and (min-width: 1200px) {
     body {
         background-image: url("../assets/home/background-home-desktop.jpg");
@@ -102,19 +130,30 @@ body {
     }
 
     .item-logo {
-        display: none;
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+    }
+
+    .item-logo img {
+        margin-top: 24px;
+        float: left;
     }
     
     .item-blur-box {
-        display: block;
         grid-column-start: 4;
         grid-column-end: 9;
         grid-row-start: 2;
         grid-row-end: span 2;
+
+        float: right;
+        width: 100%;
     }
     
     .item-nav-line {
         display: block;
+
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: 2;
@@ -122,13 +161,13 @@ body {
     }
     
     .item-nav {
-        display: block;
-        grid-column-start: 2;
-        grid-column-end: 7;
+        grid-column-start: 4;
+        grid-column-end: span 3;
         grid-row-start: 2;
         grid-row-end: span 2;
-    
-        z-index: 3;
+
+        float: none;
+        width: 100%;
     }
     
     .item-subheader {

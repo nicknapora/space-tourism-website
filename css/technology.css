@@ -1,7 +1,7 @@
 /* This is the specialized CSS for the technology page.
 */
 body {
-    background-image: url("../assets/technology/background-technology-desktop.jpg");
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
     background-color: var(--background-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,89 +13,376 @@ body {
 }
 
 .container {
-    grid-template-columns: [left-margin] 55px [logo] 48px [navbar-spacer] 4.31fr [subnav-start] 2px [subheading-start] 78px [after-navbar-spacer] 5.56fr [content-start] 315px [blur-start] 31px [nav-spacer] 93px [nav-items-start] 62px [content-right-margin] 130px [image-start] 350px [right-margin] 165px;
-    grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-spacer] 8.44fr [subheader] 34px [middle-spacer] 2.89fr [image-upper] 111px [main-content] 303px [image-bottom] 113px [bottom-margin] 11.22fr;
+    grid-template-columns: [left-margin] 6.40fr [logo] 40px [left-of-subheading] 36px [left-of-selector] 12px [selector] 152px [subheading-rightside] 12px [left-of-menu-button] 51px [menu-button] 24px [right-margin] 6.40fr;
+    grid-template-rows: [top-margin] 24px [top-bar] 40px [above-subheading] 24px [subheading] 19px [above-image] 4.51fr [image] 23.94fr [above-selector] 4.79fr [selector-row] 40px [above-content] 26px [content-row] 30.99fr [bottom-margin] 11.41fr;
+}
+
+.item-logo {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.item-menu-button {
+    grid-column-start: 8;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
 }
 
 .item-blur-box {
-    grid-column-start: 8;
-    grid-column-end: span 6;
-    grid-row-start: navbar-1;
-    grid-row-end: span 2;
+    display: none;
 }
 
 .item-nav-line {
-    grid-column-start: 5;
-    grid-column-end: span 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.item-nav {
-    grid-column-start: 10;
-    grid-column-end: span 3;
-    grid-row-start: 2;
-    grid-row-end: span 2;
-
+    display: none;
     z-index: 2;
 }
 
 .item-sub {
     grid-column-start: 4;
-    grid-column-end: span 4;
-    grid-row-start: 5;
+    grid-column-end: span 3;
+    grid-row-start: 4;
     grid-row-end: span 1;
 }
 
 .item-sub-nav {
-    grid-column-start: 4;
-    grid-column-end: span 2;
+    grid-column-start: 5;
+    grid-column-end: span 1;
     grid-row-start: 8;
     grid-row-end: span 1;
 }
 
 .item-sub-nav li {
-    margin-top: 32px;
+    display: inline-block;
     text-align: center;
+    margin-left: 12px;
 }
 
 .item-sub-nav li:first-child {
-    margin-top: 0;
+    margin-left: 0;
 }
 
 .item-sub-nav li h4 {
-    margin-top: 22px;
-    line-height: 36.67px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 11px;
+    line-height: 18px;
 }
 
 .selector {
-    width: 80px;
-    height: 80px;
+    cursor: pointer;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(255, 255, 255, 0.25);
 }
 
+.selector:hover {
+    border-color: white
+}
+
+.active {
+    background-color: white;
+    border-color: white
+}
+
+.active h4 {
+    color: black;
+}
+
 .item-content {
-    grid-column-start: 7;
-    grid-column-end: span 4;
-    grid-row-start: 8;
+    text-align: center;
+
+    grid-column-start: 2;
+    grid-column-end: span 7;
+    grid-row-start: 10;
     grid-row-end: span 1;
 }
 
 .item-content h3 {
-    margin-top: 11px;
+    margin-top: 9px;
 }
 
 .item-content p {
-    margin-top: 17px;
+    margin-top: 16px;
 }
 
 .item-image {
-    grid-column-start: 12;
-    grid-column-end: span 2;
-    grid-row-start: 7;
-    grid-row-end: span 3;
+    grid-column-start: 1;
+    grid-column-end: span 9;
+    grid-row-start: 6;
+    grid-row-end: span 1;
+}
+
+#image1 {
+    display: block;
+    background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+#image2 {
+    display: none;
+    background-image: url("../assets/technology/image-spaceport-landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+#image3 {
+    display: none;
+    background-image: url("../assets/technology/image-space-capsule-landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: [left-margin] 5.08fr [logo] 48px [left-of-content] 68px [left-of-selector] 124px [left-of-blurbox] 39px [left-of-navbar] 48px [rightmost-selector] 123px [rightmost-content] 124px [rightmost-navbar] 109px [right-margin] 5.08fr;
+        grid-template-rows: [navbar] 96px [above-sub] 40px [subheading] 24px [above-image] 5.86fr [image] 30.27fr [above-selector] 5.47fr [selector-row] 60px [above-content] 44px [content-row] 23.14fr [bottom-margin] 9.47fr;
+    }
+
+    .item-logo {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    .item-logo img {
+        margin-top: 24px;
+    }
+
+    .item-blur-box {
+        display: block;
+
+        grid-column-start: left-of-navbar;
+        grid-column-end: span 5;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+    
+    .item-nav {
+        display: block;
+        z-index: 3;
+
+        grid-column-start: rightmost-selector;
+        grid-column-end: span 3;
+        grid-row-start: 1;
+        grid-row-end: span 1;
+    }
+
+    .item-sub {
+        grid-column-start: 2;
+        grid-column-end: span 3;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+    }
+    
+    .item-sub-nav {
+        grid-column-start: 5;
+        grid-column-end: span 3;
+        grid-row-start: 7;
+        grid-row-end: span 1;
+    }
+    
+    .item-sub-nav li {
+        margin-left: 10px;
+    }
+    
+    .item-sub-nav li h4 {
+        font-size: 24px;
+        letter-spacing: 1.5px;
+        margin-top: 14px;
+        line-height: 27.5px;
+    }
+    
+    .selector {
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+    
+    .item-content {
+        grid-column-start: 1;
+        grid-column-end: span 10;
+        grid-row-start: 9;
+        grid-row-end: span 1;
+    }
+    
+    .item-content h3 {
+        margin-top: 16px;
+    }
+    
+    .item-content p {
+        margin-top: 16px;
+        margin-left: 20.18vw;
+        margin-right: 20.18vw;
+    }
+    
+    .item-image {
+        grid-column-start: 1;
+        grid-column-end: span 10;
+        grid-row-start: 5;
+        grid-row-end: span 1;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        background-image: url("../assets/technology/background-technology-desktop.jpg");
+    }
+
+    .container {
+        grid-template-columns: [left-margin] 55px [logo] 48px [navbar-spacer] 4.31fr [subnav-start] 2px [subheading-start] 78px [after-navbar-spacer] 5.56fr [content-start] 315px [blur-start] 31px [nav-spacer] 93px [nav-items-start] 62px [content-right-margin] 130px [image-start] 350px [right-margin] 165px;
+        grid-template-rows: [top-margin] 40px [navbar-1] 48px [navbar-2] 48px [top-spacer] 8.44fr [subheader] 34px [middle-spacer] 2.89fr [image-upper] 111px [main-content] 303px [image-bottom] 113px [bottom-margin] 11.22fr;
+    }
+
+    .item-logo {
+        grid-column-start: 2;
+        grid-column-end: span 1;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    }
+
+    .item-blur-box {
+        display: block;
+
+        grid-column-start: 8;
+        grid-column-end: span 6;
+        grid-row-start: navbar-1;
+        grid-row-end: span 2;
+    }
+    
+    .item-nav-line {
+        display: block;
+
+        grid-column-start: 5;
+        grid-column-end: span 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+    .item-nav {
+        display: block;
+
+        grid-column-start: 10;
+        grid-column-end: span 3;
+        grid-row-start: 2;
+        grid-row-end: span 2;
+    }
+    
+    .item-sub {
+        grid-column-start: 4;
+        grid-column-end: span 4;
+        grid-row-start: 5;
+        grid-row-end: span 1;
+    }
+    
+    .item-sub-nav {
+        grid-column-start: 4;
+        grid-column-end: span 2;
+        grid-row-start: 8;
+        grid-row-end: span 1;
+    }
+    
+    .item-sub-nav li {
+        margin-left: 0;
+
+        display: block;
+        margin-top: 32px;
+        text-align: center;
+    }
+    
+    .item-sub-nav li:first-child {
+        margin-top: 0;
+    }
+    
+    .item-sub-nav li h4 {
+        margin-top: 22px;
+        line-height: 36.67px;
+    }
+    
+    .selector {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.25);
+    }
+    
+    .item-content {
+        text-align: left;
+
+        grid-column-start: 7;
+        grid-column-end: span 4;
+        grid-row-start: 8;
+        grid-row-end: span 1;
+    }
+    
+    .item-content h3 {
+        margin-top: 11px;
+    }
+    
+    .item-content p {
+        margin-top: 17px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .item-image {
+        background-image: url("../assets/technology/image-launch-vehicle-portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        
+
+        grid-column-start: 12;
+        grid-column-end: span 2;
+        grid-row-start: 7;
+        grid-row-end: span 3;
+    }
+
+    #image1 {
+        background-image: url("../assets/technology/image-launch-vehicle-portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+    
+    #image2 {
+        background-image: url("../assets/technology/image-spaceport-portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+    
+    #image3 {
+        background-image: url("../assets/technology/image-space-capsule-portrait.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
 }
 

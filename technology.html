@@ -16,6 +16,15 @@
       <div class="item-blur-box"></div>
       <div class="item-nav-line"></div>
 
+      <div class="item-logo">
+        <img src="assets/shared/logo.svg">
+      </div>
+
+      <div class="item-menu-button">
+        <img id="openButton" src="assets/shared/icon-hamburger.svg">
+        <img id="closeButton" src="assets/shared/icon-close.svg">
+      </div>
+
       <div class="item-nav">
         <nav>
           <ul class="navbar">
@@ -45,7 +54,7 @@
       <div class="item-sub-nav">
         <ul>
           <li>
-            <div class="selector" id="button-1">
+            <div class="selector active" id="button-1">
               <h4>
                 1
               </h4>
@@ -74,11 +83,11 @@
           The terminology...
         </h5>
 
-        <h3>
+        <h3 id="contentHeading">
           Launch vehicle
         </h3>
 
-        <p>
+        <p id="contentParagraph">
           A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
           payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
           WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
@@ -87,8 +96,14 @@
       </div>
 
       <div class="item-image">
-        <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch vehicle">
+        <div class="contentImage" id="image1"></div>
+        <div class="contentImage" id="image2"></div>
+        <div class="contentImage" id="image3"></div>
       </div>
+
     </div>
+
+    <script src="slideOutMenuScript.js"></script>
+    <script src="technologyScript.js"></script>
   </body>
 </html>

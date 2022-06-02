@@ -16,9 +16,16 @@
       <div class="item-blur-box"></div>
       <div class="item-nav-line"></div>
 
-      <div class="item-nav">
-        <img src="assets/shared/logo.svg" alt="Logo" class="logo">
+      <div class="item-logo">
+        <img src="assets/shared/logo.svg">
+      </div>
 
+      <div class="item-menu-button">
+        <img id="openButton" src="assets/shared/icon-hamburger.svg">
+        <img id="closeButton" src="assets/shared/icon-close.svg">
+      </div>
+
+      <div class="item-nav">
         <nav>
           <ul class="navbar">
             <li class="nav-index">
@@ -44,47 +51,47 @@
         01 Pick your destination
       </div>
 
+
       <div class="item-sub-nav">
         <ul>
-          <li>
+          <li class="selector active" id="button-1">
             Moon
           </li>
-          <li>
+          <li class="selector" id="button-2">
             Mars
           </li>
-          <li>
+          <li class="selector" id="button-3">
             Europa
           </li>
-          <li>
+          <li class="selector" id="button-4">
             Titan
           </li>
         </ul>
       </div>
 
-      <div class="item-header">
-        <h1>
+      <div class="item-content">
+        <h1 id="contentHeading">
           Moon
         </h1>
-      </div>
-
-      <!-- ADD ERROR PROTECTION WITH JAVASCRIPT HOTSWAPPING -->
-      <div class="item-image">
-        <img src="assets/destination/image-moon.webp" alt="Earth's moon">
-      </div>
-
-      <div class="item-paragraph">
-        <p>
+        <p id="contentParagraph">
           See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
           regain perspective and come back refreshed. While you’re there, take in some history 
           by visiting the Luna 2 and Apollo 11 landing sites.
         </p>
+      </div>
+
+      <div class="item-image">
+        <img src="assets/destination/image-moon.webp" alt="Earth's moon" id="image1">
+        <img src="assets/destination/image-mars.webp" alt="Mars" id="image2">
+        <img src="assets/destination/image-europa.webp" alt="Europa" id="image3">
+        <img src="assets/destination/image-titan.webp" alt="Titan" id="image4">
       </div>
       
       <div class="item-distance-info">
         <div class="subheading2">
           Avg. distance
         </div>
-        <div class="subheading1">
+        <div class="subheading1" id="travelDistance">
           384,400 km
         </div>
       </div>
@@ -93,10 +100,12 @@
         <div class="subheading2">
           Est. travel time
         </div>
-        <div class="subheading1">
+        <div class="subheading1" id="travelTime">
           3 days
         </div>
       </div>
     </div>
+    <script src="slideOutMenuScript.js"></script>
+    <script src="destinationScript.js"></script>
   </body>
 </html>
